@@ -1,0 +1,28 @@
+.container {
+  padding: 20px;
+
+  .results {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .items {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 120px;
+  }
+
+  .action-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+      width: 250px;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

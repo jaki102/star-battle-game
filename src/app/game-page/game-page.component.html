@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="results">
+    <card><h1>Player 1</h1></card>
+    <card
+      ><h1>{{ playerOneResult }} : {{ playerTwoResult }}</h1></card
+    >
+    <card><h1>Player 2</h1></card>
+  </div>
+  <div class="items">
+    <result-item
+      header="Player 1 item"
+      [item]="playerOneItem"
+      [resource]="resource"
+    ></result-item>
+    <result-item
+      header="Player 2 item"
+      [item]="playerTwoItem"
+      [resource]="resource"
+    ></result-item>
+  </div>
+  <div class="action-section">
+    <button (click)="getItem()" mat-flat-button>Select resource</button>
+    <button [routerLink]="['/']" mat-flat-button>Change resource type</button>
+    <button (click)="resetGame()" mat-flat-button color="warn">
+      Reset game
+    </button>
+  </div>
+</div>

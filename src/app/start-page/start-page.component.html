@@ -1,0 +1,18 @@
+<div class="container">
+  <mat-card class="menu">
+    <mat-card-content class="menu-content">
+      <h1>Star battle game</h1>
+      <mat-form-field>
+        <mat-label>Choose resource</mat-label>
+        <select matNativeControl [formControl]="resourceControl">
+          <option *ngFor="let r of resources" [value]="r">
+            {{ r }}
+          </option>
+        </select>
+      </mat-form-field>
+      <button (click)="goToGame()" mat-flat-button color="primary">
+        Play game
+      </button></mat-card-content
+    >
+  </mat-card>
+</div>
