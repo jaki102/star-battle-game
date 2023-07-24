@@ -20,3 +20,7 @@ npm install
 ng serve
 ```
 The dev server will be running on `http://localhost:4200/`.
+
+## Tests
+
+WIP
